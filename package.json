@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "Russell Schmidt Portfolio & Blog Website",
+  "description": "Let's make cool stuff together! Web and native apps.",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
