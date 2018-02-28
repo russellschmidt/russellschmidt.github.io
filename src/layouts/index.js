@@ -34,11 +34,10 @@ let logo = css({
 });
 
 export default ({ children }) => (
-  <div style={{ margin: `0 auto`, maxWidth: 960, padding: `0 1rem` }}>
+  <div style={{ margin: `0 auto`, maxWidth: 1280, padding: `0 1rem` }}>
     <g.Div
       width={`100%`}
       borderBottom={`1px solid black`}
-
     >
       <nav className={navStyle}>
         <h6 className={ css(topnav, logo) }><Link className={topnavLink} to="/">russellschmidt.net</Link></h6>

@@ -1,11 +1,20 @@
-import React from "react"
+import React from "react";
+import g from "glamorous";
+import { css } from "glamor";
+
+import {rhythm} from "../utils/typography";
+
+let mainContainer = css({
+  display: `grid`,
+  gridTemplateColumns: `66% 33%`,
+  gridTemplateRows: `50% 25% auto`,
+});
+
 
 export default () => (
-  <div>
-    <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
-    <p>
-      What do I like to do? Lots of course but definitely enjoy building
-      websites.
-    </p>
+  <div className={mainContainer}>
+    <article>art1</article>
+    <article>art2</article>
+    <footer>foot</footer>
   </div>
 );
