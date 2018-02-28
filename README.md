@@ -1,10 +1,5 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# RS Blog 3
+Another iteration of my blog and portfolio, written in React using the Gatsby framework.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
-
-## Running in development
-`gatsby develop`
+## Dependencies
+* gatsby-plugin-typography

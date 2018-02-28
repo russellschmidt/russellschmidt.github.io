@@ -1,5 +1,5 @@
 {
-  "name": "Russell Schmidt Portfolio & Blog Website",
+  "name": "russell-schmidt-dev-portfolio-blog",
   "description": "Let's make cool stuff together! Web and native apps.",
   "license": "MIT",
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "gatsby": "^1.9.215",
-    "gatsby-link": "^1.6.37"
+    "gatsby-link": "^1.6.37",
+    "gatsby-plugin-typography": "^1.7.15"
   }
 }
