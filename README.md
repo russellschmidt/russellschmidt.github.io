@@ -5,3 +5,4 @@ Another iteration of my blog and portfolio, written in React using the Gatsby fr
 * gatsby-plugin-typography
 * typography-theme-sutro
 * gatsby-plugin-glamor
+* glamorous
