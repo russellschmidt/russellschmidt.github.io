@@ -7,11 +7,9 @@ import TopNav from "../components/TopNav";
 let container = css({
   margin: `0 auto`,
   maxWidth: 1280,
-  minHeight: `100vh`,
+  height: `100%`,
   padding: `0 1rem`,
-  display: `flex`,
-  flexFlow: `row wrap`,
-  alignContent: `stretch`,
+
 });
 
 let sandwichContainer = css({
@@ -20,8 +18,12 @@ let sandwichContainer = css({
 });
 
 let bodyContainer = css({
-  flex: `1 100%`
+  minHeight: `calc(100vh - 300px)`,
+  "@media (max-width: 768px)": {
+    minHeight: `calc(100vh - 250px)`,
+  },
 });
+
 
 export default ({ children }) => (
   <div css={container}>

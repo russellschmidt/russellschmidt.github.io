@@ -7,10 +7,11 @@ import {rhythm} from "../utils/typography";
 
 let componentGrid = css({
   display: `grid`,
-  gridTemplateColumns: `repeat(12, 8.5%)`,
+  gridTemplateColumns: `repeat(12, 8%)`,
   gridTemplateRows: `auto`,
   borderBottom: `1px solid #333`,
   width: `100%`,
+  justifyContent: `space-evenly`,
 });
 
 let navHeader = css({
@@ -36,7 +37,6 @@ let logo = css({
 let rightLink = css({
   "@media (max-width: 768px)": {
     textAlign: `right`,
-    paddingRight: 5,
   },
 });
 
