@@ -5,11 +5,22 @@ import { css } from "glamor";
 
 import {rhythm} from "../utils/typography";
 
+let slideItIn = css.keyframes('slideItIn', {
+  '0%': {
+    marginLeft: '200%',
+    width: '300%',
+  },
+  '100%': {
+    marginLeft: '0%',
+    width: '300%',
+  }
+});
+
 let componentGrid = css({
   display: `grid`,
   gridTemplateColumns: `repeat(12, 8%)`,
   gridTemplateRows: `33px 33px 33px`,
-  borderTop: `1px solid #333`,
+  borderTop: `1px solid #888`,
   width: `100%`,
   justifyContent: `space-evenly`,
 });
@@ -17,6 +28,7 @@ let componentGrid = css({
 let iconP = css({
   margin: 0,
   padding: `5px 0 0`,
+  animation: `${slideItIn} 2s`,
 });
 
 let iconA = css({
@@ -115,6 +127,7 @@ export default () => (
   <footer className={componentGrid}>
     <p css={{
       gridColumn: `span 2`, fontSize: 8, margin: 0, paddingTop: 5,
+      animation: `${slideItIn} 2s`,
       "@media (min-width: 768px)": {
         fontSize: 12,
         textAlign: `left`

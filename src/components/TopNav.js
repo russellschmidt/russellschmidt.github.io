@@ -5,11 +5,28 @@ import { css } from "glamor";
 
 import {rhythm} from "../utils/typography";
 
+let bounce = css.keyframes('bounce', {
+  '0%': { transform: 'scale(0.1)', opacity: 0 },
+  '60%': { transform: 'scale(1.2)', opacity: 1 },
+  '100%': { transform: 'scale(1)' }
+});
+
+let slideItIn = css.keyframes('slideItIn', {
+  '0%': {
+    marginLeft: '200%',
+    width: '300%',
+  },
+  '100%': {
+    marginLeft: '0%',
+    width: '300%',
+  }
+});
+
 let componentGrid = css({
   display: `grid`,
   gridTemplateColumns: `repeat(12, 8%)`,
   gridTemplateRows: `auto`,
-  borderBottom: `1px solid #333`,
+  borderBottom: `1px solid #888`,
   width: `100%`,
   justifyContent: `space-evenly`,
 });
@@ -23,6 +40,7 @@ let navHeader = css({
     gridColumn: `span 3`,
     textAlign: `center`,
   },
+  animation: `${slideItIn} 2s`,
 });
 
 let logo = css({
@@ -47,6 +65,7 @@ let navLink = css({
   fontStyle: `normal`,
   "&:hover": {
     textDecoration: `none`,
+    animation: `${bounce} 3s`,
   },
 });
 
