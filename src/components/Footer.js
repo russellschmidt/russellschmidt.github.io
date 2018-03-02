@@ -152,7 +152,7 @@ export default () => (
         fontSize: 14,
         animation: `${slideItIn} 2s`,
       }
-    }}>Contact Me</p>
+    }}><Link to="/contact-me/" className={navLink} css={{fontWeight: `600`}}>Contact Me</Link></p>
     <p className={iconP} >
       <a className={iconA} href="https://linkedin.com/in/russellschmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconLinkedIn}`} src="https://s3.amazonaws.com/russell-personal/social-icons/linkedin.svg" alt="LinkedIn russellschmidt profile"/></a>
     </p>
@@ -188,16 +188,15 @@ export default () => (
     <p css={{
       gridColumn: `span 3`,
       fontSize: rhythm(0.2),
-      textTransform: `uppercase`,
       "@media (min-width: 768px)": {
         fontSize: 12,
-        fontWeight: 600,
+        fontWeight: 300,
         textAlign: `left`,
         margin: `auto 0`,
         gridColumn: `span 6`,
         animation: `${slideItIn} 2s`,
       }
-    }}>&copy; {new Date().getFullYear()} Russell Schmidt</p>
+    }}>&copy; {new Date().getFullYear()} Russell Schmidt - All Rights Reserved</p>
     <p css={{
       gridColumn: `span 3`,
       fontSize: rhythm(0.2),

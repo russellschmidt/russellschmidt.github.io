@@ -11,5 +11,12 @@ module.exports = {
     },
     `gatsby-plugin-glamor`,
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-postcss-sass`,
+      options: {
+        postCssPlugins: [],
+        precision: 5,
+      },
+    },
   ],
 };
