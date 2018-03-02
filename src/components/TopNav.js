@@ -40,7 +40,7 @@ let navHeader = css({
   animation: `${slideItIn} 2s`,
   "@media (max-width: 768px)": {
     gridColumn: `span 3`,
-    textAlign: `center`,
+    textAlign: `right`,
     animation: `none`,
     marginTop: rhythm(2/3),
     marginBottom: rhythm(1/3),

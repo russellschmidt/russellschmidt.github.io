@@ -6,7 +6,7 @@ export default () => (
 
   <div className="contactContainer">
     <div className="headerContainer">
-      <h1>Contact Me</h1>
+      <h1>Contact Me!</h1>
     </div>
     <div className="imageContainer">
       <img src="https://storage.googleapis.com/russellmschmidt-net-portfolio/leif-erikson.svg" alt="Leif Ericson statue in Reykjavik, the discoverer of America for the Europeans"/>
@@ -22,7 +22,7 @@ export default () => (
         <option value="other">Some other reason</option>
       </select>
       <textarea className="contactFormInput" name="subject" placeholder="Describe what you would like to discuss with me in more detail"></textarea>
-      <input type="submit" value="Send"/>
+      <div className="submitContainer"><input type="submit" value="Send"/></div>
     </form>
   </div>
 );

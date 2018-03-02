@@ -200,7 +200,7 @@ export default () => (
     <p css={{
       gridColumn: `span 3`,
       fontSize: rhythm(0.2),
-      textAlign: `center`,
+      textAlign: `right`,
       textTransform: `uppercase`,
       "@media (min-width: 768px)": {
         fontSize: 12,
@@ -216,7 +216,7 @@ export default () => (
     <p css={{
       gridColumn: `span 3`,
       fontSize: rhythm(0.2),
-      textAlign: `center`,
+      textAlign: `right`,
       textTransform: `uppercase`,
       "@media (min-width: 768px)": {
         fontSize: 12,

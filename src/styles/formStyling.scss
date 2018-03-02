@@ -1,18 +1,85 @@
+.contactContainer {
+  background: url(https://storage.googleapis.com/russellmschmidt-net-portfolio/leif-erikson.svg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  height: calc(100vh - 200px);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 8%);
+  grid-template-rows: 15% 85%;
+  justify-content: space-evenly;
+
+  .headerContainer {
+    grid-column: span 12;
+
+    h1 {
+      margin: 0rem 0 0.25rem;
+    }
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  form {
+    grid-column: 2 / 12;
+  }
+
+  .contactFormInput {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin: 0 0 1.33rem 0;
+    background: rgba(#e5e5e5, 0.92);
+  }
+
+  input[type=text].contactFormInput, input[type=email].contactFormInput, textarea.contactFormInput {
+    font-size: 12px;
+    border-radius: 6px;
+    border: none;
+  }
+
+  select.contactFormInput {
+    font-size: 10px;
+  }
+
+  textarea {
+    height: 25%;
+    min-height: 120px;
+  }
+
+  .submitContainer {
+    text-align: center;
+  }
+
+  input[type=submit] {
+    background: rgba(#ff0, 0.92);
+    border: 1px solid #555;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-top: -10px;
+    font-weight: 700;
+    box-shadow: 0 0 3px 3px #660;
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .contactContainer {
     height: calc(100vh - 180px);
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(12, 8%);
-    grid-template-rows: 25% 75%;
-    justify-content: space-evenly;
+    background: none;
 
     .headerContainer {
       grid-column: span 12;
     }
 
     .imageContainer {
+      display: block;
       grid-column: 2 / 5;
     }
 
@@ -24,13 +91,9 @@
       padding: 3rem 0;
     }
 
-    input[type=text].contactFormInput, input[type=email].contactFormInput, select.contactFormInput, textarea.contactFormInput {
-      width: 100%;
+    .contactFormInput {
       padding: 5px;
-      box-sizing: border-box;
-      resize: vertical;
       margin: 0 1rem 2rem 0;
-      font-size: 14px;
     }
 
     textarea {
@@ -39,15 +102,8 @@
     }
 
     input[type=submit] {
-      font-size: 1.2rem;
-      color: white;
-      background-color: #888;
-      font-weight: 800;
-      text-shadow: 0 0 2px black;
-      padding: 0.8rem 1.6rem;
-      border-radius: 20%;
       cursor: pointer;
-      box-shadow: 0 0 2px 2px rgba(0,0,0,0.5);
+      box-shadow: 0 0 1px 1px #ddd;
     }
   }
 }
