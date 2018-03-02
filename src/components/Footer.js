@@ -27,44 +27,128 @@ let iconA = css({
 let iconImg = css({
   width: 20,
   height: 20,
+});
+
+let iconSquare = css({
   "&:hover": {
-    borderRadius: `30%`,
-    background: `rgba(255,0,0,0.8)`,
+    borderRadius: `20%`,
+  },
+});
+
+let iconCircle = css({
+  "&:hover": {
+    borderRadius: `50%`,
+  },
+});
+
+let iconLinkedIn = css({
+  "&:hover": {
+    background: `rgba(0, 119, 181, 0.75)`,
+    boxShadow: `0 0 6px 2px rgba(0, 119, 181, 1)`
+  },
+});
+
+let iconGithub = css({
+  "&:hover": {
+    background: `rgba(24, 23, 23, 0.3)`,
+    boxShadow: `0 0 6px 3px rgba(24, 23, 23, 0.6)`
+  },
+});
+
+let iconTwitter = css({
+  "&:hover": {
+    background: `rgba(29, 161, 242, 0.75)`,
+    boxShadow: `0 0 6px 3px rgba(29, 161, 242, 1)`
+  },
+});
+
+let iconInstagram = css({
+  "&:hover": {
+    background: `rgba(228, 64, 95, 0.75)`,
+    boxShadow: `0 0 6px 2px rgba(228, 64, 95, 1)`
+  },
+});
+
+let iconGooglePlus = css({
+  "&:hover": {
+    background: `rgba(220, 78, 65, 0.75)`,
+    boxShadow: `0 0 6px 3px rgba(220, 78, 65, 1)`
+  },
+});
+
+let iconSnapchat = css({
+  "&:hover": {
+    background: `rgba(255, 252, 0, 0.75)`,
+    boxShadow: `0 0 6px 2px rgba(255, 252, 0, 1)`
+  },
+});
+
+let iconSteam = css({
+  "&:hover": {
+    background: `rgba(0, 0, 0, 0.3)`,
+    boxShadow: `0 0 6px 3px rgba(0, 0, 0, 0.6)`
+  },
+});
+
+let iconPinterest = css({
+  "&:hover": {
+    background: `rgba(189, 8, 28, 0.75)`,
+    boxShadow: `0 0 6px 3px rgba(189, 8, 28, 1)`
+  },
+});
+
+let iconCodeWars = css({
+  "&:hover": {
+    background: `rgba(173, 44, 39, 0.75)`,
+    boxShadow: `0 0 6px 3px rgba(173, 44, 39, 1)`
+  },
+});
+
+let iconStackOverflow = css({
+  "&:hover": {
+    background: `rgba(254, 122, 22, 0.75)`,
+    boxShadow: `0 0 6px 2px rgba(254, 122, 22, 1)`
   },
 });
 
 export default () => (
   <footer className={componentGrid}>
-    <p css={{gridColumn: `span 2`, fontSize: 8, margin: 0, paddingTop: 5,}}>Follow Me</p>
+    <p css={{
+      gridColumn: `span 2`, fontSize: 8, margin: 0, paddingTop: 5,
+      "@media (min-width: 768px)": {
+        fontSize: 12,
+        textAlign: `left`
+      },
+    }}>Follow Me</p>
     <p className={iconP}>
-      <a className={iconA} href="https://linkedin.com/in/russellschmidt" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/linkedin.svg" alt="LinkedIn russellschmidt profile"/></a>
+      <a className={iconA} href="https://linkedin.com/in/russellschmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconLinkedIn}`} src="https://s3.amazonaws.com/russell-personal/social-icons/linkedin.svg" alt="LinkedIn russellschmidt profile"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://github.com/russellschmidt" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/github.svg" alt="GitHub russellschmidt profile"/></a>
+      <a className={iconA} href="https://github.com/russellschmidt" target="_blank"><img className={`${iconImg} ${iconCircle} ${iconGithub}`} src="https://s3.amazonaws.com/russell-personal/social-icons/github.svg" alt="GitHub russellschmidt profile"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://twitter.com/russ_eel" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/twitter.svg" alt="Twitter profile @russ-eel"/></a>
+      <a className={iconA} href="https://twitter.com/russ_eel" target="_blank"><img className={`${iconImg} ${iconCircle} ${iconTwitter}`} src="https://s3.amazonaws.com/russell-personal/social-icons/twitter.svg" alt="Twitter profile @russ-eel"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://www.instagram.com/russ_eel/" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/instagram.svg" alt="Instagram @russ_eel"/></a>
+      <a className={iconA} href="https://www.instagram.com/russ_eel/" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconInstagram}`} src="https://s3.amazonaws.com/russell-personal/social-icons/instagram.svg" alt="Instagram @russ_eel"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://plus.google.com/u/0/115439838839649200716" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/googleplus.svg" alt="Google+ Google Plus everyone's favorite social site"/></a>
+      <a className={iconA} href="https://plus.google.com/u/0/115439838839649200716" target="_blank"><img className={`${iconImg} ${iconCircle} ${iconGooglePlus}`}  src="https://s3.amazonaws.com/russell-personal/social-icons/googleplus.svg" alt="Google+ Google Plus everyone's favorite social site"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="http://snapchat.com/add/rms-one" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/snapchat.svg" alt="Snapchat"/></a>
+      <a className={iconA} href="http://snapchat.com/add/rms-one" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconSnapchat}`} src="https://s3.amazonaws.com/russell-personal/social-icons/snapchat.svg" alt="Snapchat"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="http://steamcommunity.com/id/russ-eel/" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/steam.svg" alt="Steam user russ-eel"/></a>
+      <a className={iconA} href="http://steamcommunity.com/id/russ-eel/" target="_blank"><img className={`${iconImg} ${iconCircle} ${iconSteam}`} src="https://s3.amazonaws.com/russell-personal/social-icons/steam.svg" alt="Steam user russ-eel"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://www.pinterest.com/rschmidt0378/" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/pinterest.svg" alt="Pinterest rschmidt0378"/></a>
+      <a className={iconA} href="https://www.pinterest.com/rschmidt0378/" target="_blank"><img className={`${iconImg} ${iconCircle} ${iconPinterest}`} src="https://s3.amazonaws.com/russell-personal/social-icons/pinterest.svg" alt="Pinterest rschmidt0378"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://www.codewars.com/users/russellschmidt" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/codewars.svg" alt="CodeWars Russell Schmidt profile"/></a>
+      <a className={iconA} href="https://www.codewars.com/users/russellschmidt" target="_blank"><img className={`${iconImg} ${iconCircle} ${iconCodeWars}`} src="https://s3.amazonaws.com/russell-personal/social-icons/codewars.svg" alt="CodeWars Russell Schmidt profile"/></a>
     </p>
     <p className={iconP}>
-      <a className={iconA} href="https://stackoverflow.com/users/1834685/russell-schmidt" target="_blank"><img className={iconImg} src="https://s3.amazonaws.com/russell-personal/social-icons/stackoverflow.svg" alt="Stack Overflow Russell Schmidt profile"/></a>
+      <a className={iconA} href="https://stackoverflow.com/users/1834685/russell-schmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconStackOverflow}`} src="https://s3.amazonaws.com/russell-personal/social-icons/stackoverflow.svg" alt="Stack Overflow Russell Schmidt profile"/></a>
     </p>
     <g.P
       fontSize={8}

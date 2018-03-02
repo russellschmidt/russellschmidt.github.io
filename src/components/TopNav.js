@@ -33,8 +33,6 @@ let logo = css({
     textAlign: `left`,
   },
   "&:hover": {
-    borderRadius: `30%`,
-    background: `rgba(255,0,0,0.8)`,
   },
 });
 
