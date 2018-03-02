@@ -1,11 +1,25 @@
 {
-  "name": "russell-schmidt-dev-portfolio-blog",
-  "description": "Let's make cool stuff together! Web and native apps.",
+  "name": "rusl.io",
+  "description": "Russell Schmidt: Web and App Developer. My Portfolio and Blog, social links, links I like, and so much more.",
+  "author": "Russell Schmidt @russ-eel",
+  "version": "3.0.0",
   "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "blog",
+    "react",
+    "developer",
+    "Russell Schmidt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:russellschmidt/russellschmidt.github.io.git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
     "gatsby": "^1.9.215",
@@ -25,5 +39,8 @@
     "glamorous": "^4.11.6",
     "react-helmet": "^5.2.0",
     "typography-theme-sutro": "^0.15.10"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
