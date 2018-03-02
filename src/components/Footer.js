@@ -158,8 +158,10 @@ export default () => (
     <p className={iconP}>
       <a className={iconA} href="https://stackoverflow.com/users/1834685/russell-schmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconStackOverflow}`} src="https://s3.amazonaws.com/russell-personal/social-icons/stackoverflow.svg" alt="Stack Overflow Russell Schmidt profile"/></a>
     </p>
+
+
     <p css={{
-      gridColumn: `span 4`, fontSize: rhythm(0.2),
+      gridColumn: `span 3`, fontSize: rhythm(0.5),
       animation: `${slideItIn} 2s`,
       "@media (min-width: 768px)": {
         fontSize: 14,
@@ -167,6 +169,16 @@ export default () => (
         margin: `auto 0`
       },
     }}>&copy; {new Date().getFullYear()} Russell Schmidt</p>
-
+    <p css={{
+      gridColumn: `span 3`, fontSize: rhythm(0.5),
+      animation: `${slideItIn} 2s`,
+      "@media (min-width: 768px)": {
+        fontSize: 14,
+        textAlign: `left`,
+        margin: `auto 0`
+      }
+    }}>
+      <Link to="/privacy/" css={{ }}>Privacy Policy</Link>
+    </p>
   </footer>
 );
