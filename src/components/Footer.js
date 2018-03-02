@@ -16,10 +16,17 @@ let slideItIn = css.keyframes('slideItIn', {
   }
 });
 
+let pulsate = css.keyframes('pulsate', {
+  '0%': { opacity: 0.8, textShadow: `0 0 25px #f80` },
+  '33%': { opacity: 0.6, textShadow: `0 0 25px #0f8` },
+  '66%': { opacity: 0.8, textShadow: `0 0 25px #0ff` },
+  '100%': { opacity: 0.6, textShadow: `0 0 25px #80f` },
+});
+
 let componentGrid = css({
   display: `grid`,
   gridTemplateColumns: `repeat(12, 8%)`,
-  gridTemplateRows: `33px 33px 33px`,
+  gridTemplateRows: `33px 33px`,
   borderTop: `1px solid #888`,
   width: `100%`,
   justifyContent: `space-evenly`,
@@ -28,7 +35,9 @@ let componentGrid = css({
 let iconP = css({
   margin: 0,
   padding: `5px 0 0`,
-  animation: `${slideItIn} 2s`,
+  '@media (min-width: 768px)': {
+    animation: `${slideItIn} 2s`,
+  }
 });
 
 let iconA = css({
@@ -123,12 +132,28 @@ let iconStackOverflow = css({
   },
 });
 
+let navLink = css({
+  color: `#000`,
+  fontStyle: `normal`,
+  "&:hover": {
+    textDecoration: `none`,
+    animation: `${pulsate} 2s ease-in-out infinite`,
+  },
+});
+
 export default () => (
   <footer className={componentGrid}>
     <p css={{
       gridColumn: `span 2`,
-    }}>email me</p>
-    <p className={iconP}>
+      fontSize: rhythm(0.3),
+      margin: `auto 0`,
+      textTransform: `uppercase`,
+      "@media (min-width: 768px)": {
+        fontSize: 14,
+        animation: `${slideItIn} 2s`,
+      }
+    }}>Contact Me</p>
+    <p className={iconP} >
       <a className={iconA} href="https://linkedin.com/in/russellschmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconLinkedIn}`} src="https://s3.amazonaws.com/russell-personal/social-icons/linkedin.svg" alt="LinkedIn russellschmidt profile"/></a>
     </p>
     <p className={iconP}>
@@ -161,24 +186,64 @@ export default () => (
 
 
     <p css={{
-      gridColumn: `span 3`, fontSize: rhythm(0.5),
-      animation: `${slideItIn} 2s`,
+      gridColumn: `span 3`,
+      fontSize: rhythm(0.2),
+      textTransform: `uppercase`,
       "@media (min-width: 768px)": {
-        fontSize: 14,
+        fontSize: 12,
+        fontWeight: 600,
         textAlign: `left`,
-        margin: `auto 0`
-      },
+        margin: `auto 0`,
+        gridColumn: `span 6`,
+        animation: `${slideItIn} 2s`,
+      }
     }}>&copy; {new Date().getFullYear()} Russell Schmidt</p>
     <p css={{
-      gridColumn: `span 3`, fontSize: rhythm(0.5),
-      animation: `${slideItIn} 2s`,
+      gridColumn: `span 3`,
+      fontSize: rhythm(0.2),
+      textAlign: `center`,
+      textTransform: `uppercase`,
       "@media (min-width: 768px)": {
-        fontSize: 14,
+        fontSize: 12,
+        fontWeight: 600,
         textAlign: `left`,
-        margin: `auto 0`
+        margin: `auto 0`,
+        gridColumn: `span 2`,
+        animation: `${slideItIn} 2s`,
       }
     }}>
-      <Link to="/privacy/" css={{ }}>Privacy Policy</Link>
+      <Link className={navLink} to="/privacy/" css={{ }}>Privacy Policy</Link>
+    </p>
+    <p css={{
+      gridColumn: `span 3`,
+      fontSize: rhythm(0.2),
+      textAlign: `center`,
+      textTransform: `uppercase`,
+      "@media (min-width: 768px)": {
+        fontSize: 12,
+        fontWeight: 600,
+        textAlign: `left`,
+        margin: `auto 0`,
+        gridColumn: `span 2`,
+        animation: `${slideItIn} 2s`,
+      }
+    }}>
+      <Link className={navLink} to="/terms-of-service/" css={{ }}>Terms of Service</Link>
+    </p>
+    <p css={{
+      gridColumn: `span 3`,
+      fontSize: rhythm(0.2),
+      textAlign: `right`,
+      textTransform: `uppercase`,
+      "@media (min-width: 768px)": {
+        fontSize: 12,
+        fontWeight: 600,
+        textAlign: `left`,
+        margin: `auto 0`,
+        gridColumn: `span 2`,
+        animation: `${slideItIn} 2s`,
+      }
+    }}>Site Map
     </p>
   </footer>
 );

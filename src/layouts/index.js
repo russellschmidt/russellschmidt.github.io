@@ -12,28 +12,33 @@ let container = css({
 
 });
 
-let sandwichContainer = css({
+let topContainer = css({
   height: 100,
   width: `100%`,
 });
 
 let bodyContainer = css({
-  minHeight: `calc(100vh - 300px)`,
+  minHeight: `calc(100vh - 280px)`,
   "@media (max-width: 768px)": {
-    minHeight: `calc(100vh - 280px)`,
+    minHeight: `calc(100vh - 270px)`,
   },
+});
+
+let bottomContainer = css({
+  height: 70,
+  width: `100%`,
 });
 
 
 export default ({ children }) => (
   <div css={container}>
-    <div css={sandwichContainer}>
+    <div css={topContainer}>
       <TopNav />
     </div>
     <div css={bodyContainer}>
       {children()}
     </div>
-    <div css={sandwichContainer}>
+    <div css={bottomContainer}>
       <Footer />
     </div>
   </div>

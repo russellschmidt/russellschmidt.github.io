@@ -37,11 +37,15 @@ let navHeader = css({
   marginBottom: rhythm(1/2),
   textAlign: `left`,
   gridColumn: `span 2`,
+  animation: `${slideItIn} 2s`,
   "@media (max-width: 768px)": {
     gridColumn: `span 3`,
     textAlign: `center`,
+    animation: `none`,
+    marginTop: rhythm(2/3),
+    marginBottom: rhythm(1/3),
   },
-  animation: `${slideItIn} 2s`,
+
 });
 
 let logo = css({
@@ -50,8 +54,6 @@ let logo = css({
   "@media (max-width: 768px)": {
     gridColumn: `span 3`,
     textAlign: `left`,
-  },
-  "&:hover": {
   },
 });
 
@@ -68,6 +70,11 @@ let navLink = css({
     textDecoration: `none`,
     animation: `${pulsate} 2s ease-in-out infinite`,
   },
+  "@media (max-width: 768px)": {
+    fontSize: rhythm(2/5),
+    textAlign: `center`,
+    gridColumn: `span 3`,
+  },
 });
 
 let navLogo = css({
@@ -79,16 +86,16 @@ let navLogo = css({
 export default () => (
   <nav className={componentGrid}>
     <h6 className={`${navHeader} ${logo}`}>
-      <Link className={`${navLink} ${navLogo}`} to="/">Russell Schmidt</Link>
+      <Link className={`${navLink} ${navLogo}`} to="/">RUSSELL SCHMIDT</Link>
     </h6>
     <h6 className={navHeader}>
-      <Link className={navLink} to="/portfolio/">Portfolio</Link>
+      <Link className={navLink} to="/portfolio/">PORTFOLIO</Link>
     </h6>
     <h6 className={navHeader}>
-      <Link className={navLink} to="/blog/">Blog</Link>
+      <Link className={navLink} to="/blog/">BLOG</Link>
     </h6>
     <h6 className={`${navHeader} ${rightLink}`}>
-      <Link className={navLink} to="/about/">About</Link>
+      <Link className={navLink} to="/about/">ABOUT</Link>
     </h6>
   </nav>
 );
