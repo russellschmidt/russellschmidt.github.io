@@ -5,10 +5,11 @@ import { css } from "glamor";
 
 import {rhythm} from "../utils/typography";
 
-let bounce = css.keyframes('bounce', {
-  '0%': { transform: 'scale(0.1)', opacity: 0 },
-  '60%': { transform: 'scale(1.2)', opacity: 1 },
-  '100%': { transform: 'scale(1)' }
+let pulsate = css.keyframes('pulsate', {
+  '0%': { opacity: 0.8, textShadow: `0 0 25px #f80` },
+  '33%': { opacity: 0.6, textShadow: `0 0 25px #0f8` },
+  '66%': { opacity: 0.8, textShadow: `0 0 25px #0ff` },
+  '100%': { opacity: 0.6, textShadow: `0 0 25px #80f` },
 });
 
 let slideItIn = css.keyframes('slideItIn', {
@@ -65,7 +66,7 @@ let navLink = css({
   fontStyle: `normal`,
   "&:hover": {
     textDecoration: `none`,
-    animation: `${bounce} 3s`,
+    animation: `${pulsate} 2s ease-in-out infinite`,
   },
 });
 
