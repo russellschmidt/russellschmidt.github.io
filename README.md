@@ -6,3 +6,4 @@ Another iteration of my blog and portfolio, written in React using the Gatsby fr
 * typography-theme-sutro
 * gatsby-plugin-glamor
 * glamorous
+* gatsby-plugin-sitemap

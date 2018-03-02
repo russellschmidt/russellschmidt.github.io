@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://www.russellschmidt.net`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
@@ -7,5 +10,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-glamor`,
+    `gatsby-plugin-sitemap`,
   ],
 };

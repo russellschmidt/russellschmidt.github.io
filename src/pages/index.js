@@ -11,6 +11,6 @@ let bodyContainer = css({
 
 export default () => (
   <div className={bodyContainer}>
-    <h1>hi</h1>
+    <h1>Welcome</h1>
   </div>
 );

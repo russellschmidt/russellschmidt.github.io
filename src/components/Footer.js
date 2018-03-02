@@ -243,7 +243,7 @@ export default () => (
         gridColumn: `span 2`,
         animation: `${slideItIn} 2s`,
       }
-    }}>Site Map
+    }}> <Link className={navLink} to="/sitemap.xml" css={{ }}>Site Map</Link>
     </p>
   </footer>
 );
