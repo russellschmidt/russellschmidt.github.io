@@ -1,3 +1,11 @@
+@keyframes submit-pulsate {
+  0% { background: rgba(#ff0, 0.92); box-shadow: 0 0 6px 1px #aa0; color: #000;}
+  25% { background: rgba(#aa0, 0.77); box-shadow: 0 0 12px 1px #ff0; color: #fff;}
+  50% { background: rgba(#ee0, 0.92); box-shadow: 0 0 6px 1px #ee0; color: #888;}
+  75% { background: rgba(#aa0, 0.77); box-shadow: 0 0 12px 1px #ff0; color: #fff;}
+  100% { background: rgba(#ff0, 0.92); box-shadow: 0 0 6px 1px #aa0; color: #000;}
+}
+
 .contactContainer {
   background: url(https://storage.googleapis.com/russellmschmidt-net-portfolio/leif-erikson.svg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -68,7 +76,6 @@
 }
 
 
-
 @media (min-width: 768px) {
   .contactContainer {
     height: calc(100vh - 180px);
@@ -104,6 +111,10 @@
     input[type=submit] {
       cursor: pointer;
       box-shadow: 0 0 1px 1px #ddd;
+      &:hover {
+        animation: submit-pulsate 3s ease-in-out infinite;
+      }
     }
   }
 }
+
