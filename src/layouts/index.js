@@ -20,7 +20,7 @@ let sandwichContainer = css({
 let bodyContainer = css({
   minHeight: `calc(100vh - 300px)`,
   "@media (max-width: 768px)": {
-    minHeight: `calc(100vh - 250px)`,
+    minHeight: `calc(100vh - 280px)`,
   },
 });
 

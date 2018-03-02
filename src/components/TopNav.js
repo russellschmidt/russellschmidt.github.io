@@ -32,6 +32,10 @@ let logo = css({
     gridColumn: `span 3`,
     textAlign: `left`,
   },
+  "&:hover": {
+    borderRadius: `30%`,
+    background: `rgba(255,0,0,0.8)`,
+  },
 });
 
 let rightLink = css({
@@ -48,12 +52,16 @@ let navLink = css({
   },
 });
 
+let navLogo = css({
+
+});
+
 
 
 export default () => (
   <nav className={componentGrid}>
     <h6 className={`${navHeader} ${logo}`}>
-      <Link className={navLink} to="/">Russell Schmidt</Link>
+      <Link className={`${navLink} ${navLogo}`} to="/">Russell Schmidt</Link>
     </h6>
     <h6 className={navHeader}>
       <Link className={navLink} to="/portfolio/">Portfolio</Link>
