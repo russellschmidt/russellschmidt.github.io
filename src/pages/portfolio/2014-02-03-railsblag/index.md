@@ -1,7 +1,7 @@
 ---
-path: "/portfolio/railsblog/"
+path: "/portfolio/railsblag/"
 date: "2014-02-03T02:12:33.962Z"
-title: "railsblog"
+title: "railsblag"
 type: "portfolio"
 ---
 
