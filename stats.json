@@ -1,0 +1,76 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-privacy-js": [
+      "component---src-pages-privacy-js-68efc333aa904202f2f4.js",
+      "component---src-pages-privacy-js-68efc333aa904202f2f4.js.map"
+    ],
+    "component---src-pages-contact-me-js": [
+      "component---src-pages-contact-me-js-a0a91faa5014415e7715.js",
+      "component---src-pages-contact-me-js-a0a91faa5014415e7715.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-e18b0a4ddc4ca77e9a11.js",
+      "component---src-pages-index-js-e18b0a4ddc4ca77e9a11.js.map"
+    ],
+    "path---blog": [
+      "path---blog-c7e7b1b80938efd7df14.js",
+      "path---blog-c7e7b1b80938efd7df14.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-dc3d57b02b5309edc9bd.js",
+      "component---src-layouts-index-js-dc3d57b02b5309edc9bd.js.map"
+    ],
+    "path---contact-me": [
+      "path---contact-me-a0e39f21c11f6a62c5ab.js",
+      "path---contact-me-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-terms-of-service-js": [
+      "component---src-pages-terms-of-service-js-660243d9f6c498c748b2.js",
+      "component---src-pages-terms-of-service-js-660243d9f6c498c748b2.js.map"
+    ],
+    "path---privacy": [
+      "path---privacy-a0e39f21c11f6a62c5ab.js",
+      "path---privacy-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-d85a11dd1295e6d71f2d.js",
+      "commons-d85a11dd1295e6d71f2d.js.map"
+    ],
+    "path---portfolio": [
+      "path---portfolio-259e0e13c8faa6db0436.js",
+      "path---portfolio-259e0e13c8faa6db0436.js.map"
+    ],
+    "component---src-pages-blog-js": [
+      "component---src-pages-blog-js-9ad5f8ffe89da22bd579.js",
+      "component---src-pages-blog-js-9ad5f8ffe89da22bd579.js.map"
+    ],
+    "path---terms-of-service": [
+      "path---terms-of-service-a0e39f21c11f6a62c5ab.js",
+      "path---terms-of-service-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-2feb834c032f37b2115f.js",
+      "app-2feb834c032f37b2115f.js.map"
+    ],
+    "component---src-pages-portfolio-js": [
+      "component---src-pages-portfolio-js-a00dea644e7536d55997.js",
+      "component---src-pages-portfolio-js-a00dea644e7536d55997.js.map"
+    ],
+    "component---src-pages-about-js": [
+      "component---src-pages-about-js-03cfc597f7e15796187b.js",
+      "component---src-pages-about-js-03cfc597f7e15796187b.js.map"
+    ],
+    "path---about": [
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
