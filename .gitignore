@@ -60,6 +60,3 @@ typings/
 .cache/
 public
 yarn-error.log
-
-# CNAME for github pages
-CNAME

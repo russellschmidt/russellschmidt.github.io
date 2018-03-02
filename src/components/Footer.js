@@ -141,6 +141,10 @@ let navLink = css({
   },
 });
 
+let footerParagraph = css({
+
+});
+
 export default () => (
   <footer className={componentGrid}>
     <p css={{
