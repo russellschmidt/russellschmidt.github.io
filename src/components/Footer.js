@@ -56,83 +56,78 @@ let iconCircle = css({
 let iconLinkedIn = css({
   "&:hover": {
     background: `rgba(0, 119, 181, 0.75)`,
-    boxShadow: `0 0 6px 2px rgba(0, 119, 181, 1)`
+    boxShadow: `0 0 6px 2px rgba(0, 119, 181, 0.8)`
   },
 });
 
 let iconGithub = css({
   "&:hover": {
     background: `rgba(24, 23, 23, 0.3)`,
-    boxShadow: `0 0 6px 3px rgba(24, 23, 23, 0.6)`
+    boxShadow: `0 0 6px 3px rgba(24, 23, 23, 0.5)`
   },
 });
 
 let iconTwitter = css({
   "&:hover": {
     background: `rgba(29, 161, 242, 0.75)`,
-    boxShadow: `0 0 6px 3px rgba(29, 161, 242, 1)`
+    boxShadow: `0 0 6px 3px rgba(29, 161, 242, 0.8)`
   },
 });
 
 let iconInstagram = css({
   "&:hover": {
     background: `rgba(228, 64, 95, 0.75)`,
-    boxShadow: `0 0 6px 2px rgba(228, 64, 95, 1)`
+    boxShadow: `0 0 6px 2px rgba(228, 64, 95, 0.8)`
   },
 });
 
 let iconGooglePlus = css({
   "&:hover": {
     background: `rgba(220, 78, 65, 0.75)`,
-    boxShadow: `0 0 6px 3px rgba(220, 78, 65, 1)`
+    boxShadow: `0 0 6px 3px rgba(220, 78, 65, 0.8)`
   },
 });
 
 let iconSnapchat = css({
   "&:hover": {
     background: `rgba(255, 252, 0, 0.75)`,
-    boxShadow: `0 0 6px 2px rgba(255, 252, 0, 1)`
+    boxShadow: `0 0 6px 2px rgba(255, 252, 0, 0.8)`
   },
 });
 
 let iconSteam = css({
   "&:hover": {
     background: `rgba(0, 0, 0, 0.3)`,
-    boxShadow: `0 0 6px 3px rgba(0, 0, 0, 0.6)`
+    boxShadow: `0 0 6px 3px rgba(0, 0, 0, 0.5)`
   },
 });
 
 let iconPinterest = css({
   "&:hover": {
     background: `rgba(189, 8, 28, 0.75)`,
-    boxShadow: `0 0 6px 3px rgba(189, 8, 28, 1)`
+    boxShadow: `0 0 6px 3px rgba(189, 8, 28, 0.8)`
   },
 });
 
 let iconCodeWars = css({
   "&:hover": {
     background: `rgba(173, 44, 39, 0.75)`,
-    boxShadow: `0 0 6px 3px rgba(173, 44, 39, 1)`
+    boxShadow: `0 0 6px 3px rgba(173, 44, 39, 0.8)`
   },
 });
 
 let iconStackOverflow = css({
   "&:hover": {
     background: `rgba(254, 122, 22, 0.75)`,
-    boxShadow: `0 0 6px 2px rgba(254, 122, 22, 1)`
+    boxShadow: `0 0 6px 2px rgba(254, 122, 22, 0.8)`
   },
 });
 
 export default () => (
   <footer className={componentGrid}>
     <p css={{
-      gridColumn: `span 2`, fontSize: 8, margin: 0, paddingTop: 5,
-      animation: `${slideItIn} 2s`,
-      "@media (min-width: 768px)": {
-        fontSize: 12,
-        textAlign: `left`
-      },
-    }}>Follow Me</p>
+      gridColumn: `span 2`,
+    }}>email me</p>
     <p className={iconP}>
       <a className={iconA} href="https://linkedin.com/in/russellschmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconLinkedIn}`} src="https://s3.amazonaws.com/russell-personal/social-icons/linkedin.svg" alt="LinkedIn russellschmidt profile"/></a>
     </p>
@@ -163,9 +158,15 @@ export default () => (
     <p className={iconP}>
       <a className={iconA} href="https://stackoverflow.com/users/1834685/russell-schmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconStackOverflow}`} src="https://s3.amazonaws.com/russell-personal/social-icons/stackoverflow.svg" alt="Stack Overflow Russell Schmidt profile"/></a>
     </p>
-    <g.P
-      fontSize={8}
-      gridColumn={`span 4`}
-    >&copy; {new Date().getFullYear()} Russell Schmidt</g.P>
+    <p css={{
+      gridColumn: `span 4`, fontSize: rhythm(0.2),
+      animation: `${slideItIn} 2s`,
+      "@media (min-width: 768px)": {
+        fontSize: 14,
+        textAlign: `left`,
+        margin: `auto 0`
+      },
+    }}>&copy; {new Date().getFullYear()} Russell Schmidt</p>
+
   </footer>
 );
