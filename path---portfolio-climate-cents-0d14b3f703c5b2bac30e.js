@@ -1,0 +1,2 @@
+webpackJsonp([0xbdade34d3f38],{618:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="http://climatecents.org">http://climatecents.org</a></h2>',frontmatter:{date:"May 01, 2017",path:"/portfolio/climate-cents/",title:"Climate Cents",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-climate-cents-0d14b3f703c5b2bac30e.js.map

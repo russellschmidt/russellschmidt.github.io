@@ -1,0 +1,2 @@
+webpackJsonp([0xdd03a1ce9a81],{615:function(t,a){t.exports={data:{markdownRemark:{html:'<h2><a href="https://www.echoskillstore.com/funBulldogFacts/B01DZHDMDG">https://www.echoskillstore.com/funBulldogFacts/B01DZHDMDG</a></h2>',frontmatter:{date:"Invalid date",path:"/portfolio/alexa-bulldog-facts/",title:"Alexa Skill - FunBulldogFacts",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-alexa-bulldog-facts-4b5abdbd0e20adfbb1fb.js.map

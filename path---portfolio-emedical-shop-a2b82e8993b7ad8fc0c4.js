@@ -1,0 +1,2 @@
+webpackJsonp([61455390966264],{624:function(t,a){t.exports={data:{markdownRemark:{html:'<h2><a href="https://www.emedical.shop">https://www.emedical.shop</a></h2>',frontmatter:{date:"January 19, 2018",path:"/portfolio/emedical-shop/",title:"emedical.shop",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-emedical-shop-a2b82e8993b7ad8fc0c4.js.map

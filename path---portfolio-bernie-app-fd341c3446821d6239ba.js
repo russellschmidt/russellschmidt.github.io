@@ -1,0 +1,2 @@
+webpackJsonp([0xde7d70b69bc6],{617:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="http://bernieapp.com">http://bernieapp.com</a></h2>',frontmatter:{date:"Invalid date",path:"/portfolio/bernie-app/",title:"Bernie App",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-bernie-app-fd341c3446821d6239ba.js.map

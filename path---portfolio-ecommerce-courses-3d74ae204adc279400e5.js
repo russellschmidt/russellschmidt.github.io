@@ -1,0 +1,2 @@
+webpackJsonp([0x78c5796f2d4b],{623:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://rs-one-month-stripe-payments.herokuapp.com">https://rs-one-month-stripe-payments.herokuapp.com</a></h2>',frontmatter:{date:"March 15, 2015",path:"/portfolio/ecommerce-courses/",title:"Rails Ecommerce Courses",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-ecommerce-courses-3d74ae204adc279400e5.js.map

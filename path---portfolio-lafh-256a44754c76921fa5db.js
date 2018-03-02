@@ -1,0 +1,2 @@
+webpackJsonp([17600658478248],{628:function(t,o){t.exports={data:{markdownRemark:{html:'<h2><a href="http://lafh.org">http://lafh.org</a></h2>',frontmatter:{date:"December 01, 2017",path:"/portfolio/lafh/",title:"Los Angeles Family Housing (LAFH)",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-lafh-256a44754c76921fa5db.js.map

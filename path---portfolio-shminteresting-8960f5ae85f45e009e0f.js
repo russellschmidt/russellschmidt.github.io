@@ -1,0 +1,2 @@
+webpackJsonp([0xe0b7ba6c80bd],{638:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://russell-pinteresting.herokuapp.com">https://russell-pinteresting.herokuapp.com</a></h2>',frontmatter:{date:"Invalid date",path:"/portfolio/shminteresting/",title:"Shminteresting",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-shminteresting-8960f5ae85f45e009e0f.js.map

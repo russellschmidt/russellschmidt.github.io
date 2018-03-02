@@ -1,0 +1,2 @@
+webpackJsonp([0xbcd1a51a65b1],{616:function(a,t){a.exports={data:{markdownRemark:{html:'<h2><a href="https://www.echoskillstore.com/California-Trivia-Game/B01G4UX380">https://www.echoskillstore.com/California-Trivia-Game/B01G4UX380</a></h2>',frontmatter:{date:"Invalid date",path:"/portfolio/alexa-california-trivia/",title:"Alexa Skill - California Trivia Game",type:"portfolio"}}},pathContext:{}}}});
+//# sourceMappingURL=path---portfolio-alexa-california-trivia-e38bacee8a4b06f42e0f.js.map
