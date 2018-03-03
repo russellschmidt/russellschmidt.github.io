@@ -14,13 +14,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:russellschmidt/russellschmidt.github.io.git"
+    "url": "git@github.com:russellschmidt/rs-blog-3.git"
   },
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "jesucristo": "gatsby build && netlify deploy"
   },
   "dependencies": {
     "gatsby": "^1.9.222",
