@@ -16,11 +16,12 @@ let slideItIn = css.keyframes('slideItIn', {
   }
 });
 
-let pulsate = css.keyframes('pulsate', {
-  '0%': { opacity: 0.8, textShadow: `0 0 25px #f80` },
-  '33%': { opacity: 0.6, textShadow: `0 0 25px #0f8` },
-  '66%': { opacity: 0.8, textShadow: `0 0 25px #0ff` },
-  '100%': { opacity: 0.6, textShadow: `0 0 25px #80f` },
+let bottomPulsate = css.keyframes('bottomPulsate', {
+  '0%': { opacity: 0.85, textShadow: `0 0 20px #ff0000` },
+  '25%': { opacity: 0.55, textShadow: `0 0 25px #bb3322` },
+  '50%': { opacity: 0.75, textShadow: `0 0 20px #dd2222` },
+  '75%': { opacity: 0.55, textShadow: `0 0 25px #aa4433` },
+  '100%': { opacity: 0.85, textShadow: `0 0 20px #ff0000` },
 });
 
 let componentGrid = css({
@@ -137,12 +138,23 @@ let navLink = css({
   fontStyle: `normal`,
   "&:hover": {
     textDecoration: `none`,
-    animation: `${pulsate} 2s ease-in-out infinite`,
+    animation: `${bottomPulsate} 2s ease-in infinite`,
   },
 });
 
 let footerParagraph = css({
-
+  gridColumn: `span 3`,
+  fontSize: rhythm(0.2),
+  textAlign: `right`,
+  textTransform: `uppercase`,
+  "@media (min-width: 768px)": {
+    fontSize: 12,
+    fontWeight: 600,
+    textAlign: `left`,
+    margin: `auto 0`,
+    gridColumn: `span 2`,
+    animation: `${slideItIn} 2s`,
+  }
 });
 
 export default () => (
@@ -189,64 +201,16 @@ export default () => (
     </p>
 
 
-    <p css={{
-      gridColumn: `span 3`,
-      fontSize: rhythm(0.2),
-      "@media (min-width: 768px)": {
-        fontSize: 12,
-        fontWeight: 300,
-        textAlign: `left`,
-        margin: `auto 0`,
-        gridColumn: `span 6`,
-        animation: `${slideItIn} 2s`,
-      }
-    }}>&copy; {new Date().getFullYear()} Russell Schmidt - All Rights Reserved</p>
-    <p css={{
-      gridColumn: `span 3`,
-      fontSize: rhythm(0.2),
-      textAlign: `right`,
-      textTransform: `uppercase`,
-      "@media (min-width: 768px)": {
-        fontSize: 12,
-        fontWeight: 600,
-        textAlign: `left`,
-        margin: `auto 0`,
-        gridColumn: `span 2`,
-        animation: `${slideItIn} 2s`,
-      }
-    }}>
+    <p className={footerParagraph}>
+      &copy; {new Date().getFullYear()} Russell Schmidt - All Rights Reserved
+    </p>
+    <p className={footerParagraph}>
       <Link className={navLink} to="/privacy/" css={{ }}>Privacy Policy</Link>
     </p>
-    <p css={{
-      gridColumn: `span 3`,
-      fontSize: rhythm(0.2),
-      textAlign: `right`,
-      textTransform: `uppercase`,
-      "@media (min-width: 768px)": {
-        fontSize: 12,
-        fontWeight: 600,
-        textAlign: `left`,
-        margin: `auto 0`,
-        gridColumn: `span 2`,
-        animation: `${slideItIn} 2s`,
-      }
-    }}>
+    <p className={footerParagraph}>
       <Link className={navLink} to="/terms-of-service/" css={{ }}>Terms of Service</Link>
     </p>
-    <p css={{
-      gridColumn: `span 3`,
-      fontSize: rhythm(0.2),
-      textAlign: `right`,
-      textTransform: `uppercase`,
-      "@media (min-width: 768px)": {
-        fontSize: 12,
-        fontWeight: 600,
-        textAlign: `left`,
-        margin: `auto 0`,
-        gridColumn: `span 2`,
-        animation: `${slideItIn} 2s`,
-      }
-    }}> <Link className={navLink} to="/sitemap.xml" css={{ }}>Site Map</Link>
+    <p className={footerParagraph}> <Link className={navLink} to="/sitemap.xml" css={{ }}>Site Map</Link>
     </p>
   </footer>
 );
