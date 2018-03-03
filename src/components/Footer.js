@@ -3,8 +3,6 @@ import Link from "gatsby-link";
 import g from "glamorous";
 import { css } from "glamor";
 
-import {rhythm} from "../utils/typography";
-
 let slideItIn = css.keyframes('slideItIn', {
   '0%': {
     marginLeft: '200%',
@@ -157,6 +155,21 @@ let footerParagraph = css({
   }
 });
 
+let copyrightParagraph = css({
+  gridColumn: `span 3`,
+  fontSize: 8,
+  textAlign: `right`,
+  textTransform: `none`,
+  "@media (min-width: 768px)": {
+    fontSize: 12,
+    fontWeight: 600,
+    textAlign: `left`,
+    margin: `auto 0`,
+    gridColumn: `span 6`,
+    animation: `${slideItIn} 2s`,
+  }
+});
+
 export default () => (
   <footer className={componentGrid}>
     <p css={{
@@ -201,7 +214,7 @@ export default () => (
     </p>
 
 
-    <p className={footerParagraph}>
+    <p className={copyrightParagraph}>
       &copy; {new Date().getFullYear()} Russell Schmidt - All Rights Reserved
     </p>
     <p className={footerParagraph}>
