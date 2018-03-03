@@ -6,41 +6,41 @@ import { css } from "glamor";
 
 import { rhythm } from "../utils/typography";
 
-const blogPostsFlexbox = css({
-  display: `flex`,
-  flexFlow: `row wrap`,
+const blogPostsContainer = css({
+  display: `grid`,
+  gridTemplateColumns: `repeat(12, 8%)`,
+  gridTemplateRows: `auto`,
   width: `100%`,
-  justifyContent: `space-around`,
+  justifyContent: `space-evenly`,
 });
 
 const blogPostPreview = css({
-  padding: `5px 10px`,
-  margin: `0 2px 5px`,
-  width: `30%`,
-  flexGrow: 1,
-  minWidth: 300,
-  backgroundColor: `#222`,
-  "&:hover": {backgroundColor: `#444`}
+  gridColumn: `span 3`,
+  padding: `0 10px`,
+  "@media (max-width: 768px)": {
+    gridColumn: `span 13`,
+  },
 });
 
 const blogPostTitle = css({
-  marginTop: `1.6rem`,
-  marginBottom: `1.6rem`,
-  color: `#ccc`,
-  "&:hover": {color: `#fff`}
+  margin: `1rem 0 0 0`,
 });
 
 const blogLinkStyle = css({
-  textDecoration: `none`,
-  color: `#ccc`,
-  "&:hover": {color: `#fff`}
+  color: `black`,
+  "&:hover": {
+    textDecoration: `none`,
+  }
 });
 
 const blogPostDate = css({
-  marginTop: `1.6rem`,
-  marginBottom: `3.2rem`,
-  color: `#ccc`,
-  "&:hover": {color: `#fff`}
+  margin: `0.5rem 0`,
+  fontSize: rhythm(0.4),
+});
+
+const blogPostCopy = css({
+  fontSize: rhythm(0.45),
+  textAlign: `justify`,
 });
 
 export default function BlogIndex({ data }) {
@@ -49,7 +49,7 @@ export default function BlogIndex({ data }) {
     <div>
       <h1>Blog</h1>
       <Helmet title={`Blog posts: Russell Schmidt`} />
-      <div className={blogPostsFlexbox}>
+      <div className={blogPostsContainer}>
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
@@ -58,7 +58,7 @@ export default function BlogIndex({ data }) {
               <Link className={blogLinkStyle} to={post.frontmatter.path}>
                 <h3 className={blogPostTitle}>{post.frontmatter.title}</h3>
                 <h4 className={blogPostDate}>{post.frontmatter.date}</h4>
-                <p>{post.excerpt}</p>
+                <p className={blogPostCopy}>{post.excerpt}</p>
               </Link>
             </div>
           );

@@ -181,7 +181,7 @@ export default () => (
         fontSize: 14,
         animation: `${slideItIn} 2s`,
       }
-    }}><Link to="/contact-me/" className={navLink} css={{fontWeight: `600`}}>Contact Me</Link></p>
+    }}><Link to="/contact-me/" className={navLink} css={{fontWeight: `600`,}}>Contact Me</Link></p>
     <p className={iconP} >
       <a className={iconA} href="https://linkedin.com/in/russellschmidt" target="_blank"><img className={`${iconImg} ${iconSquare} ${iconLinkedIn}`} src="https://s3.amazonaws.com/russell-personal/social-icons/linkedin.svg" alt="LinkedIn russellschmidt profile"/></a>
     </p>

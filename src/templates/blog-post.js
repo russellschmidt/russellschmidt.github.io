@@ -16,18 +16,50 @@ const blogContainer = css({
 const blogArticle = css({
   gridColumnStart: 3,
   gridColumnEnd: 11,
+  "@media (max-width: 768px)": {
+    gridColumnStart: 1,
+    gridColumnEnd: 13,
+  },
 });
 
 const blogPostTitle = css({
-
+  "@media (max-width: 768px)": {
+    fontSize: rhythm(1),
+    marginTop: rhythm(1),
+    marginBottom: 0,
+  },
 });
 
 const blogPostDate = css({
-
+  fontSize: rhythm(0.75),
+  marginTop: rhythm(1),
+  marginBottom: rhythm(1),
+  "@media (max-width: 768px)": {
+    fontSize: rhythm(0.5),
+    marginTop: rhythm(0.5),
+    marginBottom: rhythm(1),
+  },
 });
 
 const blogPostContent = css({
-
+  width: `100%`,
+  "> pre": {
+    color: `#4b4`,
+    background: `#000`,
+    padding: `4px 6px`,
+    fontSize: rhythm(0.2),
+    lineHeight: 1.4,
+  },
+  "@media (max-width: 768px)": {
+    "> pre": {
+      fontSize: rhythm(0.1),
+      lineHeight: 1.1,
+      borderTop: `1px solid #888`,
+      borderBottom: `1px solid #888`,
+      padding: `2px`,
+      overflow: `visible`,
+    },
+  },
 });
 
 export default function Template({
