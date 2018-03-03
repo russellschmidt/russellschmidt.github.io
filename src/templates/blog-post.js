@@ -5,8 +5,17 @@ import { css } from "glamor";
 
 import { rhythm } from "../utils/typography";
 
-const blogPost = css({
+const blogContainer = css({
+  display: `grid`,
+  gridTemplateColumns: `repeat(12, 8%)`,
+  gridTemplateRows: `auto`,
+  width: `100%`,
+  justifyContent: `space-evenly`,
+});
 
+const blogArticle = css({
+  gridColumnStart: 3,
+  gridColumnEnd: 11,
 });
 
 const blogPostTitle = css({
@@ -26,22 +35,22 @@ export default function Template({
 }) {
   const post = data.markdownRemark;
   return (
-    <div>
-      <Helmet title={`${post.frontmatter.title}`} />
+    <div className={blogContainer}>
+      <Helmet title={post.frontmatter.title} />
 
-        <article>
+      <article className={blogArticle}>
 
-          <header>
-            <h1 className={blogPostTitle}>{post.frontmatter.title}</h1>
-            <h2 className={blogPostDate}>{post.frontmatter.date}</h2>
-          </header>
-          <section>
-            <div
-              className={blogPostContent}
-              dangerouslySetInnerHTML={{ __html: post.html }}
-            />
-          </section>
-        </article>
+        <header>
+          <h1 className={blogPostTitle}>{post.frontmatter.title}</h1>
+          <h2 className={blogPostDate}>{post.frontmatter.date}</h2>
+        </header>
+        <section>
+          <div
+            className={blogPostContent}
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </section>
+      </article>
 
     </div>
   );

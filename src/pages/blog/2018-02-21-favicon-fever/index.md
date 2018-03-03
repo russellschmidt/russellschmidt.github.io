@@ -1,6 +1,6 @@
 ---
 path: "/blog/favicon-fever/"
-dated: "2018-02-21T15:42:11.200Z"
+date: "2018-02-21T15:42:11.200Z"
 title: "Favicon Fever"
 type: "blog"
 ---

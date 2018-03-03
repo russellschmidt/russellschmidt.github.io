@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import g from "glamorous";
 import { css } from "glamor";
+
 import { rhythm } from "../utils/typography";
 
 const blogPostsFlexbox = css({

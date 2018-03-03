@@ -1,10 +1,15 @@
 import React from "react";
+import Link from "gatsby-link";
+import Helmet from "react-helmet";
+import g from "glamorous";
+import { css } from "glamor";
 
 import "../styles/formStyling.scss";
 
 export default () => (
 
   <div className="contactContainer">
+    <Helmet title={`Contact Russell Schmidt via Email via Web Form`}/>
     <div className="headerContainer">
       <h1>Contact Me!</h1>
     </div>

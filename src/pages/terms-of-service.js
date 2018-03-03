@@ -1,10 +1,12 @@
 import React from "react";
+import Helmet from "react-helmet";
 import { css } from "glamor";
 
 import {rhythm} from "../utils/typography";
 
 export default () => (
   <div css={{ fontSize: rhythm(3/5), '@media (max-width: 768px)': {fontSize: rhythm(1/2)} }}>
+    <Helmet title={`Terms of Service: Russell Schmidt`}/>
     <article>
       <h1>Terms of Service</h1>
       <h3>OVERVIEW</h3>
