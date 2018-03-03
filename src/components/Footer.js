@@ -144,7 +144,7 @@ let navLink = css({
 
 let footerParagraph = css({
   gridColumn: `span 3`,
-  fontSize: rhythm(0.2),
+  fontSize: 8,
   textAlign: `right`,
   textTransform: `uppercase`,
   "@media (min-width: 768px)": {
@@ -161,7 +161,7 @@ export default () => (
   <footer className={componentGrid}>
     <p css={{
       gridColumn: `span 2`,
-      fontSize: rhythm(0.3),
+      fontSize: 9,
       margin: `auto 0`,
       textTransform: `uppercase`,
       "@media (min-width: 768px)": {
