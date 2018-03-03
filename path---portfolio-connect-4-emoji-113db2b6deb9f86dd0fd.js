@@ -1,2 +1,2 @@
-webpackJsonp([0x8cbe078533ce],{619:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://connect4emoji.herokuapp.com">https://connect4emoji.herokuapp.com</a></h2>',frontmatter:{date:"December 11, 2017",path:"/portfolio/connect4emoji/",title:"connect4emoji",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([0x8cbe078533ce],{621:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://connect4emoji.herokuapp.com">https://connect4emoji.herokuapp.com</a></h2>',frontmatter:{date:"December 11, 2017",path:"/portfolio/connect4emoji/",title:"connect4emoji",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-connect-4-emoji-113db2b6deb9f86dd0fd.js.map

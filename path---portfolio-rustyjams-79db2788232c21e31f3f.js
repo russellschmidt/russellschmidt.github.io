@@ -1,2 +1,2 @@
-webpackJsonp([0xae4e499f648e],{637:function(t,o){t.exports={data:{markdownRemark:{html:'<h2><a href="https://blocjams-rms.herokuapp.com">https://blocjams-rms.herokuapp.com</a></h2>',frontmatter:{date:"October 01, 2017",path:"/portfolio/rustyjams/",title:"RustyJams",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([0xae4e499f648e],{639:function(t,o){t.exports={data:{markdownRemark:{html:'<h2><a href="https://blocjams-rms.herokuapp.com">https://blocjams-rms.herokuapp.com</a></h2>',frontmatter:{date:"October 01, 2017",path:"/portfolio/rustyjams/",title:"RustyJams",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-rustyjams-79db2788232c21e31f3f.js.map

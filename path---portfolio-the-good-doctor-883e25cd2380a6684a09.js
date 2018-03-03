@@ -1,2 +1,2 @@
-webpackJsonp([83973390354003],{639:function(o,t){o.exports={data:{markdownRemark:{html:'<h2><a href="https://the-good-doctor.herokuapp.com">https://the-good-doctor.herokuapp.com</a></h2>',frontmatter:{date:"October 31, 2017",path:"/portfolio/the-good-doctor/",title:"The Good Doctor",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([83973390354003],{641:function(o,t){o.exports={data:{markdownRemark:{html:'<h2><a href="https://the-good-doctor.herokuapp.com">https://the-good-doctor.herokuapp.com</a></h2>',frontmatter:{date:"October 31, 2017",path:"/portfolio/the-good-doctor/",title:"The Good Doctor",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-the-good-doctor-883e25cd2380a6684a09.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([0xebe7e5e94945],{629:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://literallymagick.com">https://literallymagick.com</a></h2>',frontmatter:{date:"December 25, 2017",path:"/portfolio/literally-magick/",title:"Literally Magick",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([0xebe7e5e94945],{631:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://literallymagick.com">https://literallymagick.com</a></h2>',frontmatter:{date:"December 25, 2017",path:"/portfolio/literally-magick/",title:"Literally Magick",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-literally-magick-3ec4c0b4d08d2e2d1174.js.map

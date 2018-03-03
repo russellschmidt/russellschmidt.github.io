@@ -1,2 +1,2 @@
-webpackJsonp([0xacad4abd3888],{625:function(a,t){a.exports={data:{markdownRemark:{html:'<h2><a href="http://www.endeavorawards.org">http://www.endeavorawards.org</a></h2>',frontmatter:{date:"December 01, 2017",path:"/portfolio/endeavor/",title:"Endeavor Awards",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([0xacad4abd3888],{627:function(a,t){a.exports={data:{markdownRemark:{html:'<h2><a href="http://www.endeavorawards.org">http://www.endeavorawards.org</a></h2>',frontmatter:{date:"December 01, 2017",path:"/portfolio/endeavor/",title:"Endeavor Awards",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-endeavor-8c5c7acad93b7d10fb16.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([76272618941233],{636:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://russell-resume-robot.herokuapp.com">https://russell-resume-robot.herokuapp.com</a></h2>',frontmatter:{date:"December 10, 2013",path:"/portfolio/resume-robot/",title:"Resume Robot",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([76272618941233],{638:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://russell-resume-robot.herokuapp.com">https://russell-resume-robot.herokuapp.com</a></h2>',frontmatter:{date:"December 10, 2013",path:"/portfolio/resume-robot/",title:"Resume Robot",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-resume-robot-9807800ffba256d911bb.js.map

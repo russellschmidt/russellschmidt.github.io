@@ -1,2 +1,2 @@
-webpackJsonp([0x644b37bcb49d],{621:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://debater.herokuapp.com">https://debater.herokuapp.com</a></h2>',frontmatter:{date:"November 10, 2015",path:"/portfolio/debater/",title:"Debater",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([0x644b37bcb49d],{623:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="https://debater.herokuapp.com">https://debater.herokuapp.com</a></h2>',frontmatter:{date:"November 10, 2015",path:"/portfolio/debater/",title:"Debater",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-debater-14a964047c28b62602c9.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([0xc02b73ad4f30],{626:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="http://teamextenda.com">http://teamextenda.com</a></h2>',frontmatter:{date:"June 06, 2014",path:"/portfolio/extenda/",title:"Extenda",type:"portfolio"}}},pathContext:{}}}});
+webpackJsonp([0xc02b73ad4f30],{628:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="http://teamextenda.com">http://teamextenda.com</a></h2>',frontmatter:{date:"June 06, 2014",path:"/portfolio/extenda/",title:"Extenda",type:"portfolio"}}},pathContext:{}}}});
 //# sourceMappingURL=path---portfolio-extenda-1dc9b282a1efe8750f73.js.map
