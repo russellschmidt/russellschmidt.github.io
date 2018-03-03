@@ -23,7 +23,7 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
-    "gatsby": "^1.9.199",
+    "gatsby": "^1.9.222",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-catch-links": "^1.0.19",
     "gatsby-plugin-favicon": "^2.1.1",
