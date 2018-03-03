@@ -27,6 +27,8 @@ export default () => (
         <option value="other">Some other reason</option>
       </select>
       <textarea className="contactFormInput" name="subject" placeholder="Describe what you would like to discuss with me in more detail"></textarea>
+      <input type="text" name="_gotcha" style="display:none" />
+      <input type="hidden" name="_next" value="//rusl.io/" />
       <div className="submitContainer"><input type="submit" value="Send"/></div>
     </form>
   </div>
